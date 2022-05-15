@@ -18,8 +18,14 @@ function App() {
         <HomeLogin
           loginStatus={loginStatus}
           loginCbHandler={loginCbHandler}
+          path="/login"
+          element={<HomeLogin></HomeLogin>}
         ></HomeLogin>
       ) : (
+        // <Navbar
+        //   loginStatus={loginStatus}
+        //   loginCbHandler={loginCbHandler}
+        // ></Navbar>
         <LoginUser></LoginUser>
       )}
 
